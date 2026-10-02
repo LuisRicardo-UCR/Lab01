@@ -2,6 +2,7 @@ package cr.ac.ucr.ie.Laboratorio01.domain;
 
 import jakarta.persistence.*;
 
+
 import java.time.LocalDate;
 
 @Entity
@@ -13,6 +14,8 @@ public class Pelicula {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+    
+    @Column(name = "Titulo", unique = true, nullable=false)
     private String titulo;
 
     @Column(name = "titulo_original")
@@ -20,11 +23,15 @@ public class Pelicula {
 
     @Column(columnDefinition = "TEXT")
     private String sinopsis;
+    
+    @Column(nullable = false)
     private Integer duracion;
 
-    @Column(name = "fecha_estreno")
+    @Column(name = "fecha_estreno",nullable = false)
     private LocalDate fechaEstreno;
+    @Column(nullable = false)
     private String clasificacion;
+    @Column(nullable = false)
     private String genero;
     private String director;
     private String idioma;
