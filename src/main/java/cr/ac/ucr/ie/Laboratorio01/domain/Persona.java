@@ -17,7 +17,7 @@ public class Persona {
     @Id
     @GeneratedValue( strategy = GenerationType.IDENTITY)
     
-    private long id;
+    private int id;
     private String name;
     private String mail;
     
@@ -29,7 +29,7 @@ public class Persona {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(int id) {
         this.id = id;
     }
 

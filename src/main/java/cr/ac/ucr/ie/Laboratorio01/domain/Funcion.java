@@ -21,7 +21,7 @@ public class Funcion {
     
     @Id
     @GeneratedValue( strategy = GenerationType.IDENTITY)
-    private long id;
+    private int id;
     
     @ManyToOne
     @JoinColumn(name = "sala_id", nullable = false)
@@ -37,11 +37,11 @@ public class Funcion {
     
     public Funcion(){}
 
-    public long getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(int id) {
         this.id = id;
     }
 
