@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package cr.ac.ucr.ie.laboratorio01.domain;
+package cr.ac.ucr.ie.Laboratorio01.domain;
 
 import jakarta.persistence.*;
 import java.time.LocalDateTime;

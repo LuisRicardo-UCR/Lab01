@@ -1,4 +1,4 @@
-package cr.ac.ucr.ie.laboratorio01.domain;
+package cr.ac.ucr.ie.Laboratorio01.domain;
 
 import jakarta.persistence.*;
 
